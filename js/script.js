@@ -7,8 +7,6 @@ $(".portfolioBtn").on("click", function () {
     );
     closeNav();
 });
-
-
 $(".skillsBtn").on("click", function () {
     $("body, html").animate({
             scrollTop: $("#skills").offset().top,

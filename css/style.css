@@ -1,586 +1,589 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  font-family: "Saira", sans-serif;
+    font-family: "Saira", sans-serif;
 }
 
 .wrap {
-  max-width: 1024px;
-  margin: 0 auto;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 /* burger */
 .burger {
-  position: fixed;
-  top: 2vh;
-  right: 5vw;
-  font-size: 3.5vh;
-  z-index: 2;
+    position: fixed;
+    top: 2vh;
+    right: 5vw;
+    font-size: 3.5vh;
+    z-index: 2;
 }
 
 .fa-bars {
-  display: block;
+    display: block;
 }
 
 .fa-times {
-  display: none;
+    display: none;
 }
 
 @media (orientation: landscape) {
-  .burger {
-    font-size: 6vh;
-  }
+    .burger {
+        font-size: 6vh;
+    }
 }
 
 /* nav */
 nav {
-  position: fixed;
-  top: -100%;
-  left: 0;
-  right: 0;
-  height: 40vh;
-  background-color: #999;
-  z-index: 1;
-  transition: 1s;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    height: 40vh;
+    background-color: #999;
+    z-index: 1;
+    transition: 1s;
 }
 
 nav.down {
-  top: 0;
+    top: 0;
 }
 
 nav ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
 }
 
 nav li {
-  height: 10vh;
-  line-height: 10vh;
-  text-align: center;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
 }
 
 nav li a {
-  display: block;
-  width: 100%;
-  font-size: 3vh;
-  color: white;
-  letter-spacing: 2px;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 0.7s;
+    display: block;
+    width: 100%;
+    font-size: 3vh;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.7s;
 }
 
 nav li:hover a {
-  color: rgb(50, 50, 50);
-  background-color: #fff;
+    color: rgb(50, 50, 50);
+    background-color: #fff;
 }
 
 /* header */
 header {
-  position: relative;
-  height: 100vh;
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 15% 10%;
-  overflow: hidden;
-  text-align: center;
-  background-image: url(../images/working-in-bed.jpg);
-  background-position: right;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: rgb(50, 50, 50);
-  text-transform: uppercase;
+    position: relative;
+    height: 100vh;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 15% 10%;
+    overflow: hidden;
+    text-align: center;
+    background-image: url(../images/working-in-bed.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(50, 50, 50);
+    text-transform: uppercase;
 }
 
 header div.welcome {
-  position: absolute;
-  bottom: 5%;
-  left: 0;
-  width: 100vw;
-  background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 header p {
-  margin: 2% 0;
-  font-family: "Saira Condensed", sans-serif;
-  font-size: 5vh;
-  font-weight: bold;
+    margin: 2% 0;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 5vh;
+    font-weight: bold;
 }
 
 header h1 {
-  font-family: "Saira Condensed", sans-serif;
-  font-size: 4vh;
-  letter-spacing: 1.5px;
-  line-height: 2;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 4vh;
+    letter-spacing: 1.5px;
+    line-height: 2;
 }
 
 header h2 {
-  font-size: 2vh;
-  letter-spacing: 1px;
+    font-size: 2vh;
+    letter-spacing: 1px;
 }
 
 header .welcome a {
-  display: inline-block;
-  margin: 5% 0;
-  padding: 1% 5%;
-  border: 2px solid black;
-  font-family: "Saira Condensed", sans-serif;
-  color: rgb(50, 50, 50);
-  text-decoration: none;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: 0.7s;
+    display: inline-block;
+    margin: 5% 0;
+    padding: 1% 5%;
+    border: 2px solid black;
+    font-family: "Saira Condensed", sans-serif;
+    color: rgb(50, 50, 50);
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.7s;
 }
 
 header a:hover {
-  background-color: rgb(50, 50, 50);
-  border-color: transparent;
-  color: white;
+    background-color: rgb(50, 50, 50);
+    border-color: transparent;
+    color: white;
 }
 
 @media (orientation: landscape) {
-  .welcome p {
-    font-size: 7vh;
-  }
+    .welcome p {
+        font-size: 7vh;
+    }
 
-  .welcome h1 {
-    font-size: 6vh;
-  }
+    .welcome h1 {
+        font-size: 6vh;
+    }
 
-  .welcome h2 {
-    font-size: 5vh;
-  }
+    .welcome h2 {
+        font-size: 5vh;
+    }
 
-  header .welcome a {
-    margin: 3% 0;
-  }
+    header .welcome a {
+        margin: 3% 0;
+    }
 }
 
 section {
-  margin: 0;
-  min-height: 100vh;
+    margin: 0;
+    min-height: 100vh;
 }
 
 /* sekcja 1 - umiejetnosci */
 
 .skills {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .skill {
-  width: 80vw;
-  margin: 0 auto 5%;
-  text-align: center;
+    width: 80vw;
+    margin: 0 auto 5%;
+    text-align: center;
 }
 
 .skill img {
-  max-width: 70%;
-  height: 100px;
-  margin: 5% auto;
+    max-width: 70%;
+    height: 100px;
+    margin: 5% auto;
 }
 
 @media (min-width: 640px) {
-  .skills {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+    .skills {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
-  .skills h2 {
-    flex-basis: 100%;
-  }
+    .skills h2 {
+        flex-basis: 100%;
+    }
 
-  .skills .skill {
-    flex-basis: 40%;
-  }
+    .skills .skill {
+        flex-basis: 40%;
+    }
 }
 
 @media (min-width: 1024px) {
-  .skills .skill {
-    flex-basis: 30%;
-  }
+    .skills .skill {
+        flex-basis: 30%;
+    }
 }
 
 /* section - projects */
 .projects {
-  padding: 5% 0;
-  color: rgb(50, 50, 50);
-  display: flex;
-  flex-direction: column;
+    padding: 5% 0;
+    color: rgb(50, 50, 50);
+    display: flex;
+    flex-direction: column;
 }
 
 .project {
-  margin: 5vh 0;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+    margin: 5vh 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .project .web {
-  flex-basis: 50%;
+    flex-basis: 50%;
 }
 
 .project .web img {
-  display: block;
-  width: 90%;
-  margin: 10% auto;
+    display: block;
+    width: 90%;
+    margin: 10% auto;
 }
 
 .project .about {
-  padding: 5%;
+    padding: 5%;
 }
 
 .project .about h3 {
-  border-bottom: 3px solid black;
-  margin-bottom: 12px;
-  padding-bottom: 6px;
-  color: black;
+    border-bottom: 3px solid black;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    color: black;
 }
 
 .project .about p {
-  text-align: center;
-  color: black;
+    text-align: center;
+    color: black;
 }
 
 .project .about .links {
-  width: 60%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .project .about .links a {
-  flex-basis: 50%;
-  padding-top: 10%;
+    flex-basis: 50%;
+    padding-top: 10%;
 }
 
 .project .about .links a img {
-  width: 30%;
+    width: 30%;
 }
 
 .project:nth-of-type(odd) {
-  background-color: #eb0015;
-  border: 5px solid #eb0015;
+    background-color: #eb0015;
+    border: 5px solid #eb0015;
 }
 
 .project:nth-of-type(even) {
-  background-color: #00becd;
-  border: 5px solid #00becd;
+    background-color: #00becd;
+    border: 5px solid #00becd;
 }
 
 @media (orientation: landscape) {
-  .project {
-    flex-direction: row;
-  }
+    .project {
+        flex-direction: row;
+    }
 
-  .project .web {
-    flex-basis: 50%;
-  }
+    .project .web {
+        flex-basis: 50%;
+    }
 
-  .project .about {
-    flex-basis: 50%;
-  }
+    .project .about {
+        flex-basis: 50%;
+    }
 
-  .project .about .links a img {
-    width: 40%;
-  }
+    .project .about .links a img {
+        width: 40%;
+    }
 }
 
 /* motto */
 
 .aboutMe {
-  min-height: 50vh;
-  background-image: url(../images/o-mnie.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  color: white;
-  text-align: center;
-  text-shadow: 0 0 12px black;
+    min-height: 50vh;
+    background-image: url(../images/o-mnie.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 12px black;
 }
 
 .aboutMe .bg {
-  padding: 15% 5%;
-  background-color: rgba(20, 0, 0, 0.4);
+    padding: 15% 5%;
+    background-color: rgba(20, 0, 0, 0.4);
 }
 
 .aboutMe p.contents {
-  padding: 5% 0 5%;
+    padding: 5% 0 5%;
 }
 
 /* hobby */
 .hobby {
-  max-width: 1600px;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .hobby .item {
-  height: 25vh;
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: 0.7s;
+    height: 25vh;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.7s;
 }
 
 .hobby .item:nth-of-type(1) {
-  background-image: url(../images/hobby1.jpg);
+    background-image: url(../images/hobby1.jpg);
 }
 
 .hobby .item:nth-of-type(2) {
-  background-image: url(../images/hobby2.jpg);
+    background-image: url(../images/hobby2.jpg);
 }
 
 .hobby .item:nth-of-type(3) {
-  background-image: url(../images/hobby3.jpg);
+    background-image: url(../images/hobby3.jpg);
 }
 
 .hobby .item:nth-of-type(4) {
-  background-image: url(../images/hobby4.jpg);
+    background-image: url(../images/hobby4.jpg);
 }
 
 .hobby .item p {
-  margin: 0;
-  font-weight: bold;
-  color: white;
-  line-height: 25vh;
-  text-shadow: 0 0 9px black;
-  font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+    line-height: 25vh;
+    text-shadow: 0 0 9px black;
+    font-size: 20px;
 }
+
 .hobby .item:hover {
-  background-size: 130%;
+    background-size: 130%;
 }
+
 @media (min-width: 640px) {
-  .hobby {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .hobby h2 {
-    flex-basis: 100%;
-  }
+    .hobby {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
-  .hobby .item {
-    flex-basis: 50%;
-    height: 45vh;
-  }
+    .hobby h2 {
+        flex-basis: 100%;
+    }
 
-  .hobby .item p {
-    font-size: 30px;
-    line-height: 40vh;
-  }
+    .hobby .item {
+        flex-basis: 50%;
+        height: 45vh;
+    }
+
+    .hobby .item p {
+        font-size: 30px;
+        line-height: 40vh;
+    }
 }
+
 @media (min-width: 1024px) {
-  .hobby .item {
-    height: 40vh;
-  }
-  .hobby .item p {
-    line-height: 40vh;
-    background-color: rgba(0, 0, 0, 0.6);
-    opacity: 0;
-    transition: 0.7s;
-    cursor: default;
-  }
-  .hobby .item:hover p {
-    opacity: 1;
-  }
+    .hobby .item {
+        height: 40vh;
+    }
+
+    .hobby .item p {
+        line-height: 40vh;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: 0.7s;
+        cursor: default;
+    }
+
+    .hobby .item:hover p {
+        opacity: 1;
+    }
 }
 
 /* contact */
-.contact {
-  /* background-color: rgb(200, 200, 200); */
-}
 
 .contact .wrap {
-  width: 80%;
-  margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .contact input,
 .contact button,
 .contact textarea {
-  width: 100%;
-  margin-bottom: 5%;
+    width: 100%;
+    margin-bottom: 5%;
 }
 
 .contact input {
-  padding-left: 3%;
-  font-family: "Saira", sans-serif;
-  border: 2px solid black;
-  font-size: 12px;
-  line-height: 2.5;
+    padding-left: 3%;
+    font-family: "Saira", sans-serif;
+    border: 2px solid black;
+    font-size: 12px;
+    line-height: 2.5;
 }
 
 .contact textarea {
-  padding: 3%;
-  height: 30vh;
-  border: 2px solid black;
-  font-family: "Saira", sans-serif;
+    padding: 3%;
+    height: 30vh;
+    border: 2px solid black;
+    font-family: "Saira", sans-serif;
 }
 
 .contact button {
-  line-height: 2.5;
-  background-color: white;
-  font-family: "Saira", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: 2px solid black;
+    line-height: 2.5;
+    background-color: white;
+    font-family: "Saira", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid black;
 }
 
 .contact .socials {
-  padding: 5% 0 10%;
+    padding: 5% 0 10%;
 }
 
 .socials .social {
-  padding: 5%;
+    padding: 5%;
 }
 
 .socials .social img {
-  width: 20%;
-  vertical-align: middle;
+    width: 20%;
+    vertical-align: middle;
 }
 
 .socials .social span {
-  padding-left: 5%;
-  font-family: "Saira Condensed", sans-serif;
+    padding-left: 5%;
+    font-family: "Saira Condensed", sans-serif;
 }
 
 @media (min-width: 736px) {
-  .contact form {
-    float: left;
-    width: 50%;
-    padding-top: 5%;
-  }
+    .contact form {
+        float: left;
+        width: 50%;
+        padding-top: 5%;
+    }
 
-  .contact h2 {
-    padding: 5% 0 0;
-    font-size: 40px;
-  }
+    .contact h2 {
+        padding: 5% 0 0;
+        font-size: 40px;
+    }
 
-  .contact input {
-    font-size: 15px;
-  }
+    .contact input {
+        font-size: 15px;
+    }
 
-  .contact textarea {
-    font-size: 15px;
-  }
+    .contact textarea {
+        font-size: 15px;
+    }
 
-  .contact button {
-    font-size: 15px;
-  }
+    .contact button {
+        font-size: 15px;
+    }
 
-  .socials {
-    float: left;
-    width: 50%;
-  }
+    .socials {
+        float: left;
+        width: 50%;
+    }
 
-  .social span {
-    font-size: 18px;
-  }
+    .social span {
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 1024px) {
-  .contact h2 {
-    padding: 5% 0;
-    font-size: 50px;
-  }
+    .contact h2 {
+        padding: 5% 0;
+        font-size: 50px;
+    }
 
-  .contact input {
-    font-size: 20px;
-  }
+    .contact input {
+        font-size: 20px;
+    }
 
-  .contact textarea {
-    font-size: 20px;
-  }
+    .contact textarea {
+        font-size: 20px;
+    }
 
-  .contact button {
-    font-size: 20px;
-  }
+    .contact button {
+        font-size: 20px;
+    }
 
-  .social span {
-    font-size: 25px;
-  }
+    .social span {
+        font-size: 25px;
+    }
 }
 
 /* footer */
 footer {
-  background-color: rgb(50, 50, 50);
+    background-color: rgb(50, 50, 50);
 }
 
 footer p {
-  line-height: 3;
-  color: white;
-  font-family: "Saira Condensed", sans-serif;
-  text-align: center;
-  letter-spacing: 2px;
+    line-height: 3;
+    color: white;
+    font-family: "Saira Condensed", sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
 }
 
 @media (min-width: 738px) {
-  footer p {
-    font-size: 18px;
-  }
+    footer p {
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 1024px) {
-  footer p {
-    font-size: 20px;
-  }
+    footer p {
+        font-size: 20px;
+    }
 }
 
 @media (min-width: 1200px) {
-  footer p {
-    font-size: 22px;
-  }
+    footer p {
+        font-size: 22px;
+    }
 }
 
 div.goBackToTop {
-  position: fixed;
-  bottom: -5%;
-  right: 4%;
-  transition: 0.2s;
+    position: fixed;
+    bottom: -5%;
+    right: 4%;
+    transition: 0.2s;
 }
 
 div.goBackToTop.active {
-  bottom: 2%;
+    bottom: 2%;
 }
 
 .goBackToTop i {
-  font-size: 3vh;
+    font-size: 3vh;
 }
 
 /* fonts */
 .wrap h2 {
-  font-size: 25px;
-  line-height: 25px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 5% 0 0;
-  font-family: "Saira Condensed", sans-serif;
-  font-weight: bold;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5% 0 0;
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: bold;
 }
 
 .wrap h3 {
-  font-family: "Saira Condensed", sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-  text-align: center;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .wrap p {
-  margin-top: 5%;
-  font-size: 15px;
-  letter-spacing: 1.5px;
-  line-height: 2;
+    margin-top: 5%;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    line-height: 2;
 }
