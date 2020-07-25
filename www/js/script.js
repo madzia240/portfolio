@@ -8,9 +8,9 @@ $(".portfolioBtn").on("click", function () {
     closeNav();
 });
 
-$(".featuresBtn").on("click", function () {
+$(".skillsBtn").on("click", function () {
     $("body, html").animate({
-            scrollTop: $("#features").offset().top,
+            scrollTop: $("#skills").offset().top,
         },
         1000
     );

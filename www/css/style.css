@@ -8,12 +8,6 @@ html {
     font-family: 'Saira', sans-serif;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
 .wrap {
     max-width: 1024px;
     margin: 0 auto;
@@ -172,81 +166,51 @@ header a:hover {
     }
 }
 
-
-/* sekcja 1 - cechy */
-.features {
-    margin: 5vh 5vw 5vh;
-
+section {
+    margin: 0;
+    min-height: 100vh;
 }
 
-.features h1 {
-    margin-bottom: 5%;
-    font-family: 'Saira Condensed', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
+/* sekcja 1 - umiejetnosci */
+
+.skills {
+    display: flex;
+    flex-direction: column;
 }
 
-.feature {
+.skill {
     width: 80vw;
-    margin: 0 auto 10%;
+    margin: 0 auto 5%;
     text-align: center;
 }
 
-.feature img {
-    width: 80%;
+.skill img {
+    max-width: 70%;
+    height: 100px;
     margin: 5% auto;
 }
 
-.feature h2 {
-    font-family: 'Saira Condensed', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-}
 
-.feature p {
-    margin-top: 5%;
-    font-size: 15px;
-}
+@media (min-width: 640px) {
 
-
-@media (min-width: 730px) {
-
-    .features h1 {
-        font-size: 40px;
+    .skills {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
-    .feature {
-        float: left;
-        width: 50%;
-        padding: 0 5%;
+    .skills h2 {
+        flex-basis: 100%;
     }
 
-    .feature h2 {
-        font-size: 30px;
-    }
-
-    .feature p {
-        font-size: 20px;
+    .skills .skill {
+        flex-basis: 40%;
     }
 }
 
 @media (min-width: 1024px) {
 
-    .features h1 {
-        font-size: 40px;
-    }
-
-    .feature {
-        width: 33%;
-    }
-
-    .feature h2 {
-        font-size: 25px;
-    }
-
-    .feature p {
-        font-size: 15px;
+    .skills .skill {
+        flex-basis: 30%;
     }
 }
 
@@ -258,13 +222,6 @@ header a:hover {
     flex-direction: column;
 }
 
-.projects h1 {
-    padding-bottom: 2%;
-    font-family: 'Saira Condensed', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-}
 
 .project {
     margin: 5vh 0;
@@ -287,7 +244,7 @@ header a:hover {
     padding: 5%;
 }
 
-.project .about h2 {
+.project .about h3 {
     text-align: center;
     text-transform: uppercase;
     font-size: 18px;
@@ -370,12 +327,6 @@ header a:hover {
     background-color: rgba(20, 0, 0, .4);
 }
 
-.motto h2 {
-    font-family: 'Saira Condensed', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
 .motto p.contents {
     padding: 10% 0 5%;
 }
@@ -455,13 +406,6 @@ header a:hover {
     text-align: center;
 }
 
-.hobby h2 {
-    padding: 5% 0 2%;
-    font-family: 'Saira Condensed', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 25px;
-}
 
 .hobby .item {
     height: 25vh;
@@ -565,13 +509,6 @@ header a:hover {
     /* background-color: rgb(200, 200, 200); */
 }
 
-.contact h2 {
-    padding: 10% 5% 5%;
-    font-family: 'Saira Condensed', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-}
 
 .contact .wrap {
     width: 80%;
@@ -731,4 +668,25 @@ div.goBackToTop.active {
 
 .goBackToTop i {
     font-size: 3vh;
+}
+
+/* fonts */
+.wrap h2 {
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5% 0 5%;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+}
+
+.wrap h3 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.wrap p {
+    margin-top: 5%;
+    font-size: 15px;
 }
