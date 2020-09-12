@@ -174,6 +174,8 @@ section {
 .skills {
     display: flex;
     flex-direction: column;
+    transform: translateX(-120%);
+    transition: 1.5s;
 }
 
 .skill {
@@ -183,10 +185,12 @@ section {
 }
 
 .skill img {
+    display: inline-block;
     max-width: 70%;
     height: 100px;
     margin: 5% auto;
 }
+
 
 @media (min-width: 640px) {
     .skills {
@@ -215,6 +219,8 @@ section {
     color: rgb(50, 50, 50);
     display: flex;
     flex-direction: column;
+    transform: translateX(-120%);
+    transition: 1.5s;
 }
 
 .project {
@@ -307,6 +313,8 @@ section {
     color: white;
     text-align: center;
     text-shadow: 0 0 12px black;
+    transform: translateX(-120%);
+    transition: 1.5s;
 }
 
 .aboutMe .bg {
@@ -326,6 +334,8 @@ section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    transform: translateX(-120%);
+    transition: 1.5s;
 }
 
 .hobby .item {
@@ -406,9 +416,13 @@ section {
 
 /* contact */
 
-.contact .wrap {
+.contact {
     width: 80%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-120%);
+    transition: 1.5s;
 }
 
 .contact input,
@@ -442,80 +456,44 @@ section {
     border: 2px solid black;
 }
 
-.contact .socials {
-    padding: 5% 0 10%;
+.socials img {
+    padding-right: 10px;
+    width: 35px;
+    transform: translateY(5px);
 }
 
-.socials .social {
-    padding: 5%;
+.socials span {
+    line-height: 30px;
+    font-size: 15px;
 }
 
-.socials .social img {
-    width: 20%;
-    vertical-align: middle;
+.social {
+    padding-bottom: 10px;
+    cursor: pointer;
 }
 
-.socials .social span {
-    padding-left: 5%;
-    font-family: "Saira Condensed", sans-serif;
-}
+@media (orientation: landscape) {
+    .contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 
-@media (min-width: 736px) {
+    .contact h2 {
+        flex-basis: 100%;
+    }
+
     .contact form {
-        float: left;
-        width: 50%;
-        padding-top: 5%;
+        flex-basis: 50%;
     }
 
-    .contact h2 {
-        padding: 5% 0 0;
-        font-size: 40px;
+    .contact .socials {
+        flex-basis: 40%;
+
     }
 
-    .contact input {
-        font-size: 15px;
-    }
-
-    .contact textarea {
-        font-size: 15px;
-    }
-
-    .contact button {
-        font-size: 15px;
-    }
-
-    .socials {
-        float: left;
-        width: 50%;
-    }
-
-    .social span {
-        font-size: 18px;
-    }
 }
 
-@media (min-width: 1024px) {
-    .contact h2 {
-        padding: 5% 0;
-        font-size: 50px;
-    }
-
-    .contact input {
-        font-size: 20px;
-    }
-
-    .contact textarea {
-        font-size: 20px;
-    }
-
-    .contact button {
-        font-size: 20px;
-    }
-
-    .social span {
-        font-size: 25px;
-    }
-}
 
 /* footer */
 footer {
@@ -530,46 +508,42 @@ footer p {
     letter-spacing: 2px;
 }
 
-@media (min-width: 738px) {
-    footer p {
-        font-size: 18px;
-    }
-}
-
-@media (min-width: 1024px) {
-    footer p {
-        font-size: 20px;
-    }
-}
-
-@media (min-width: 1200px) {
-    footer p {
-        font-size: 22px;
-    }
-}
+/* back to top arrow */
 
 div.goBackToTop {
     position: fixed;
     bottom: -5%;
     right: 4%;
     transition: 0.2s;
+    animation: backToTop 1s infinite linear;
+    opacity: 0;
 }
 
 div.goBackToTop.active {
-    bottom: 2%;
+    opacity: 1;
 }
 
 .goBackToTop i {
     font-size: 3vh;
 }
 
+@keyframes backToTop {
+    0% {
+        bottom: 0;
+    }
+
+    100% {
+        bottom: 2%;
+    }
+}
+
 /* fonts */
 .wrap h2 {
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 28px;
+    line-height: 28px;
     text-align: center;
     text-transform: uppercase;
-    margin: 5% 0 0;
+    margin: 5% 0;
     font-family: "Saira Condensed", sans-serif;
     font-weight: bold;
 }

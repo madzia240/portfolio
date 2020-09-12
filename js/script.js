@@ -69,3 +69,38 @@ const closeNav = () => {
 }
 
 timesBtn.addEventListener('click', closeNav)
+
+// sections appearing
+
+const skillsSection = document.querySelector('.skills')
+const projectsSection = document.querySelector('.projects')
+const aboutMeSection = document.querySelector('.aboutMe')
+const hobbySection = document.querySelector('.hobby')
+const contactSection = document.querySelector('.contact')
+
+const appear = () => {
+    console.log(projectsSection.offsetTop, window.scrollY);
+    if (window.scrollY > skillsSection.offsetTop - 250) {
+        skillsSection.style.transform = 'translateX(0)'
+    }
+    if (window.scrollY > projectsSection.offsetTop - 250) {
+        projectsSection.style.transform = 'translateX(0)'
+    }
+    if (window.scrollY > aboutMeSection.offsetTop - 250) {
+        aboutMeSection.style.transform = 'translateX(0)'
+    }
+    if (window.scrollY > hobbySection.offsetTop - 250) {
+        hobbySection.style.transform = 'translateX(0)'
+    }
+    if (window.scrollY > contactSection.offsetTop - 250) {
+        contactSection.style.transform = 'translateX(0)'
+    }
+    if (window.scrollY < 250) {
+        contactSection.style.transform = 'translateX(-120%)'
+        hobbySection.style.transform = 'translateX(-120%)'
+        aboutMeSection.style.transform = 'translateX(-120%)'
+        projectsSection.style.transform = 'translateX(-120%)'
+        skillsSection.style.transform = 'translateX(-120%)'
+    }
+}
+document.addEventListener('scroll', appear)

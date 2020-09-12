@@ -6,5 +6,5 @@ $recipient = "madzia88f@o2.pl";
 $subject = "Contact Form";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-echo "Dziękuję za wiadomość";
+echo "Dziękuję za wiadomość!";
 ?>
